@@ -13,9 +13,6 @@ export default function Home() {
       <meta name="description" content="I Ain't reading all that" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
-      <NavBar />
-
       <body>
         <Container component="main">
             <header>
