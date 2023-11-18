@@ -13,21 +13,19 @@ export default function Home() {
       <meta name="description" content="I Ain't reading all that" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-      <body>
-        <Container component="main">
-            <header>
-              <h1>I ain't reading allat.</h1>        
-            </header>
-            <main>
-                <Box>
-                    <h2>Title of Article</h2>
-                    <p>Author Name</p>
-                    <p>Summary: i'm just gonna start saying stuff, like straight up yappin, like a chatterbox from Yapperville.</p>
-                    <Button></Button>
-                </Box>
-            </main>
-        </Container>
-      </body>
+    <Container component="main">
+      <header>
+          <h1>I ain't reading allat.</h1>        
+      </header>
+      <main>
+        <Box>
+            <h2>Title of Article</h2>
+            <p>Author Name</p>
+            <p>Summary: i'm just gonna start saying stuff, like straight up yappin, like a chatterbox from Yapperville.</p>
+            <Button></Button>
+          </Box>
+      </main>
+    </Container>
   </div>
   )
 }
