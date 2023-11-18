@@ -40,3 +40,7 @@ function fetchHeadlines(country, category, keyWords) {
         .catch(error => console.error('Error:', error));
 }
 
+//Default fetch if the user has not selected any filters
+
+
+
