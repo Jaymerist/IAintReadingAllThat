@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import NavBar from '@components/NavBar';
+import { Container } from '@mui/material';
 
 export default function Home() {
 
@@ -15,17 +16,16 @@ export default function Home() {
       <NavBar />
 
       <body>
-        <div class="container">
+        <Container component="main">
             <header>
-                     
+              <h1></h1>        
             </header>
             <main>
                 <section> 
 
                 </section>
             </main>
-        </div>
-
+        </Container>
       </body>
   </div>
   )
