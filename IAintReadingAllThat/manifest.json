@@ -6,7 +6,7 @@
     "browser_action": {
       "default_popup": "hello.html",
       "default_icon": {
-        "16": "hello_extensions.png"
+        "16": "hello_extension.png"
       }
     }
   }
