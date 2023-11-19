@@ -12,9 +12,10 @@ import Select from '@mui/material/Select';
 export default function Home() {
   const [countryData, setCountryData] = useState()
 
-  const handleChange = (event) => {
+  const handleCountryChange = (event) => {
     setCountryData(event.target.value)
   }
+
 
   return <div>
     {console.log(COUNTRY_LIST)}
@@ -31,13 +32,12 @@ export default function Home() {
             id="country"
             value={countryData}
             label="Country"
-            onChange={handleChange}
+            onChange={handleCountryChange}
           >
             {COUNTRY_LIST.map((country, index) => {
               return <MenuItem value={country.code}>{country.name}</MenuItem>
             })}
           </Select>
-          
       </FormControl>
     </Container>
   </div>
