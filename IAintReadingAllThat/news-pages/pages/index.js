@@ -16,10 +16,12 @@ import Grid from '@mui/material/Grid';
 import NavBar from '../components/NavBar';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
+import TextField from '@mui/material/TextField';
 
 export default function Home() {
   const [countryData, setCountryData] = useState()
-  const [categoryData, setcategoryData] = useState()
+  const [categoryData, setCategoryData] = useState()
+  const [keyWordData, setKeyWordData] = useState()
 
   const handleCountryChange = (event) => {
     setCountryData(event.target.value)
@@ -73,6 +75,19 @@ export default function Home() {
           >
             Add Category
           </Button>
+        </Grid>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <TextField
+                  id="keyword-field"
+                  label="Keyword (optional)"
+                  variant="standard"
+                  sx={{width: '100%'}}
+                  onChange = {(event) => {
+                    setKeyWordData(event.target.value)}}
+                  value={keyWordData}
+                />
+              </Grid>
         </Grid>
     </Container>
   </div>
