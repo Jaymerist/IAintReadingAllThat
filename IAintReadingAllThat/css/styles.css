@@ -1,8 +1,12 @@
+header {
+    font-weight: 400;
+}
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100%;
-    background-color: #ffc759;
-    color: #e8e9ed;
+    background-color: #ffffff;
+    color: #ffffff;
 }
 
 .container {
@@ -11,50 +15,62 @@ body {
 }
 
 header {
-    padding: 120px 0;
-    text-align: center;
     background-color: #ff7b9c;
-    box-shadow: 5px;
+    padding: 1.5rem;
+    margin-bottom: 32rem;
+    display: flex;
+    justify-content: space-between;
 } 
 
-header p {
-    font-size: 24px
-}
 
-h1 {
-    font-size: 56px;
-}
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.inner-container {
+    max-width: 64rem;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap:124px;
+    width: 100vw;
 }
 
-section {
-    padding: 10px;
-    width: 100%;
-    color: #607196;
+.flex-container section {
+    width: 100vw;
+    margin-bottom: 12rem;
+    min-height: 20rem;
+}
+
+.flex-container section section{
+    width: 70vw;
+    margin: 0 15vw 0 15vw;
+    min-height: 20rem;
+    
+}
+
+.flex-container section h2 {
+    padding-bottom: 24px;
+    text-align: center;
 }
 
 
-section section{
-    padding: 0px 360px;
-    width: 544px;
-}
-section img{
-    width: 416px;
+
+h1{
+    font-size: 1.5rem;
 }
 
+h3{
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+    font-family: var(--tofino-font);
+}
 
-footer {
-    background-color:#797979;
+section{
+    background-color: rgb(224, 143, 56);
+    
+}
+
+.head{
+    flex-direction: row;
 }
 
 
