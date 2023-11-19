@@ -44,7 +44,7 @@ export default function Home() {
             onChange={handleCountryChange}
           >
             {COUNTRY_LIST.map((country, index) => {
-              return <MenuItem value={country.code}>{country.name}</MenuItem>
+              return <MenuItem key={index} value={country.code}>{country.name}</MenuItem>
             })}
           </Select>
       </FormControl>
@@ -57,7 +57,7 @@ export default function Home() {
               name="category"
               value={categoryData}
               onChange={(event) => {
-                setRating(event.target.value)
+                setCategoryData(event.target.value)
               }}
             >
               {CATEGORY_LIST.map((category, index) => {
