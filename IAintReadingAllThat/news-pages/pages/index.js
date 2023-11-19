@@ -30,7 +30,7 @@ export default function Home() {
 
   return <div>
     <Head>
-      <title>I Ain't Reading All that</title>
+      <title>'I Ain't Reading All that'</title>
       <meta name="description" content="I Ain't reading all that" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
@@ -63,7 +63,7 @@ export default function Home() {
               }}
             >
               {CATEGORY_LIST.map((category, index) => {
-                return <FormControlLabel value={category.category} control={<Radio />} label={category.category} />
+                return <FormControlLabel key={index} value={category.category} control={<Radio />} label={category.category} />
               })}
             </RadioGroup>
          </FormControl>
