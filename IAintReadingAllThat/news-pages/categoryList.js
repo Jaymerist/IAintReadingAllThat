@@ -21,3 +21,5 @@ const CATEGORY_LIST = [
         category: "technology"
     }
 ]
+
+export { CATEGORY_LIST }
