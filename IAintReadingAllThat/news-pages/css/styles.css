@@ -75,10 +75,10 @@ ul li a:hover {
 
 .content {
     width: 1200px;
-    height: auto;
-    margin: 180px 0 0 160px;
+    margin: 184px 0 184px 160px;
     color: white;
-    position: relative;
+    background-position: center center;
+    background-image: url('news-pages/img/news.webp');
 }
 
 span {
@@ -101,20 +101,24 @@ main {
     margin: 40px 0 0 0;
     background: rgb(96,113,150);
     background-color: #ffffff;
+    margin: 0px auto;
 }
 
+.container {
+    width: 1200px;
+    padding-top: 80px;
+    margin: 0 auto;
+}
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    width: 960px;
     gap: 20px;
 }
 
 .flex-container section {
-    width: 920px;
-    padding-top: 60px;
-    padding-left: 60px;
+    width: 386.6666px;
+    padding: 0 12px 0 12px;
 }
 
 section h2 {
@@ -124,4 +128,17 @@ section h2 {
 
 section p, label, button{
     font-size: 24px;
+}
+
+.wide-wade {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1200px;
+}
+
+.wide-wade-col section {
+    width: 420px;
+    padding-left: 60px;
 }
