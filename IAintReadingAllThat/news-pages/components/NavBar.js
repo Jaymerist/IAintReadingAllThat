@@ -8,16 +8,10 @@ import Typography from '@mui/material/Typography'
 export default function NavBar(props) {
   return <AppBar position="static">
     <Toolbar>
-      <Link href="/openAiTest">
+      <Link href="/openAiTest/openAiTest">
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Space Agency App
-      </Typography></Link>
-      <Link href="/about">
-        <Typography variant="h6" component="div" >
-          About
-        </Typography>
-      </Link>
-    
+          Testing AI
+      </Typography></Link>    
     </Toolbar>
   </AppBar>
 }
