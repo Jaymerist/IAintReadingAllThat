@@ -4,7 +4,7 @@
     "description": "This will cure your dementia",
     "version": "0.1",
     "icons": {
-        "16": "./img/hello_extensions.png"
+        "16": "./news-pages/img/hello_extensions.png"
       },
     "action": {
       "default_popup": "hello.html"
