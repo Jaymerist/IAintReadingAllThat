@@ -8,6 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Container from '@mui/material/Container'
 import FormControl from '@mui/material/FormControl'
 import Select from '@mui/material/Select';
+import NavBar from '../components/NavBar';
 
 export default function Home() {
   const [countryData, setCountryData] = useState()
@@ -24,9 +25,24 @@ export default function Home() {
       <meta name="description" content="I Ain't reading all that" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <NavBar />
     <Container component="main" sx={{padding: "1rem"}}>
       <FormControl fullWidth>
-        <InputLabel id="country-label">Country</InputLabel>
+        <InputLabel id="country-label">Country (optional)</InputLabel>
+          <Select
+            labelId="country-label"
+            id="country"
+            value={countryData}
+            label="Country"
+            onChange={handleCountryChange}
+          >
+            {COUNTRY_LIST.map((country, index) => {
+              return <MenuItem value={country.code}>{country.name}</MenuItem>
+            })}
+          </Select>
+      </FormControl>
+      <FormControl fullWidth>
+        <InputLabel id="country-label">Country (optional)</InputLabel>
           <Select
             labelId="country-label"
             id="country"
