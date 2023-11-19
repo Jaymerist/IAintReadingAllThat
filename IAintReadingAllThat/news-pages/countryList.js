@@ -212,3 +212,5 @@ const COUNTRY_LIST = [
         code: "za"
     }
 ]
+
+export { COUNTRY_LIST }
