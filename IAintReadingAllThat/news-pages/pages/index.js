@@ -17,6 +17,7 @@ import NavBar from '../components/NavBar';
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
 
 export default function Home() {
   const [countryData, setCountryData] = useState()
@@ -27,7 +28,6 @@ export default function Home() {
     setCountryData(event.target.value)
   }
 
-
   return <div>
     <Head>
       <title>"I Aint Reading All that"</title>
@@ -35,7 +35,14 @@ export default function Home() {
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <NavBar />
-    <Container component="main" sx={{padding: "1rem"}}>
+    <Container component="main">
+      <Box sx={{
+        width: "100%",
+        backgroundColor: "#607196"
+        }}>
+        <Typography sx={{}}>I won't, but who will?</Typography>
+      </Box>
+      
       <FormControl fullWidth>
         <InputLabel id="country-label">Country (optional)</InputLabel>
           <Select
