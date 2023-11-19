@@ -43,4 +43,3 @@ function fetchHeadlines(country, category, keyWords) {
 //Default fetch if the user has not selected any filters
 
 
-
